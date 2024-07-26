@@ -1,8 +1,37 @@
 .portfolio {
-    height: 800px;
+    height: 1300px;
     width: 1100px;
+    padding-inline: 50px;
     border-radius: 7px;
+    box-sizing: border-box;
     background-color: ghostwhite;
     box-shadow: 0px 8px 16px 0px rgba(41, 41, 41, 0.04),
         0px 0px 6px 0px rgba(41, 41, 41, 0.04);
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.description-text {
+    color: rgb(64, 64, 64);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.education-block .info-key {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.education-block .info-value {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.projects {
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
 }

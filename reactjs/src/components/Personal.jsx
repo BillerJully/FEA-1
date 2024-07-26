@@ -1,7 +1,9 @@
 import './personal.css'
 import userImage from '../files/user-img.jpg'
-import tg from '../files/tg.svg'
-import lin from '../files/in.svg'
+import tg from '../files/tg.png'
+import lin from '../files/lin.png'
+import github from '../files/github.png'
+import gitlab from '../files/gitlab.png'
 
 const Personal = () => {
     return (
@@ -45,12 +47,12 @@ const Personal = () => {
                     </div>
                     <div className="personal-social-link">
                         <a href="" className="social-link-a">
-                            <img src="" alt="" />
+                            <img src={github} className="link-img" alt="" />
                         </a>
                     </div>
                     <div className="personal-social-link">
                         <a href="" className="social-link-a">
-                            <img src="" alt="" />
+                            <img src={gitlab} className="link-img" alt="" />
                         </a>
                     </div>
                 </div>
