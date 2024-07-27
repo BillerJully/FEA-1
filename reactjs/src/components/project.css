@@ -7,3 +7,28 @@
     box-shadow: 0px 8px 16px 0px rgba(41, 41, 41, 0.04),
         0px 0px 6px 0px rgba(41, 41, 41, 0.04);
 }
+
+.project-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.project-button {
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+
+    box-shadow: 0px 8px 16px 0px rgba(74, 74, 74, 0.04),
+        0px 0px 6px 0px rgba(41, 41, 41, 0.04);
+    font-family: monospace;
+    border: 0.2px solid rgb(212, 212, 212);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px;
+    color: rgb(235, 235, 235);
+    background-color: rgb(21, 21, 21);
+}
+
+.project-button:hover {
+    cursor: pointer;
+}

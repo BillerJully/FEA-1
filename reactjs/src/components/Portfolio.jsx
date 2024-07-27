@@ -10,7 +10,11 @@ export default function Portfolio() {
             <div className="about-me-description-container">
                 <h3>About me</h3>
                 <p className="description-text">
-                    Hi there! I am Web Developer!
+                    Hi there! I am Web Developer! Hi there! I am Web Developer!
+                    Hi there! I am Web Developer! Hi there! I am Web Developer!
+                    Hi there! I am Web Developer! Hi there! I am Web Developer!
+                    Hi there! I am Web Developer! Hi there! I am Web Developer!
+                    Hi there! I am Web Developer! Hi there! I am Web Developer!
                 </p>
             </div>
             <div className="education-container">
@@ -30,11 +34,6 @@ export default function Portfolio() {
             <div className="tech-and-skills-container">
                 <h3>Skills</h3>
                 <Skill />
-                {/* <div className="tech-and-skills-block">Skill 1</div>
-                <div className="tech-and-skills-block">Skill 2</div>
-                <div className="tech-and-skills-block">Skill 3</div>
-                <div className="tech-and-skills-block">Skill 4</div>
-                <div className="tech-and-skills-block">Skill 5</div> */}
             </div>
             <div className="projects-container">
                 <h3>Projects</h3>
