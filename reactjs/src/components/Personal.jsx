@@ -4,27 +4,28 @@ import tg from '../files/tg.png'
 import lin from '../files/lin.png'
 import github from '../files/github.png'
 import gitlab from '../files/gitlab.png'
+import userData from '../files/user.json'
 
 const Personal = () => {
     return (
         <section className="personal">
-            <h1>Software engineer</h1>
+            <h1>{userData.profession}</h1>
             <div className="img-area">
                 <img src={userImage} alt="" />
             </div>
             <div className="personal-description">
-                <h2>Bulat Zinnurov</h2>
+                <h2>{userData.userName}</h2>
                 <div className="personal-description-block">
                     <span className="info-key">Age:</span>
-                    <span className="info-value">24 y.o.</span>
+                    <span className="info-value">{userData.age}</span>
                 </div>
                 <div className="personal-description-block">
                     <span className="info-key">Location:</span>
-                    <span className="info-value">Kazan</span>
+                    <span className="info-value">{userData.location}</span>
                 </div>
                 <div className="personal-description-block">
                     <span className="info-key">Experience:</span>
-                    <span className="info-value">2 years</span>
+                    <span className="info-value">{userData.experience}</span>
                 </div>
             </div>
             <div className="personal-social-links">

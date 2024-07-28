@@ -38,14 +38,6 @@ export default function Portfolio() {
             <div className="projects-container">
                 <h3>Projects</h3>
                 <div className="projects">
-                    {/* <div className="project-container">Project 1</div>
-                    <div className="project-container">Project 2</div>
-                    <div className="project-container">Project 3</div>
-                    <div className="project-container">Project 4</div>
-                    <div className="project-container">Project 5</div>
-                    <div className="project-container">Project 6</div>
-                    <div className="project-container">Project 7</div>
-                    <div className="project-container">Project 8</div> */}
                     <Project />
                     <Project />
                     <Project />

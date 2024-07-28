@@ -17,10 +17,8 @@ const RadarChart = ({ data, labels }) => {
         const centerX = canvasRef.current.width / 2
         const centerY = canvasRef.current.height / 2
 
-        // Очистка холста
         ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height)
 
-        // Рисование осей
         ctx.strokeStyle = '#ddd'
         ctx.beginPath()
         for (let i = 0; i < numPoints; i++) {
@@ -32,7 +30,6 @@ const RadarChart = ({ data, labels }) => {
         }
         ctx.stroke()
 
-        // Рисование уровней
         for (let j = 0; j < 5; j++) {
             ctx.beginPath()
             for (let i = 0; i < numPoints; i++) {
@@ -46,7 +43,6 @@ const RadarChart = ({ data, labels }) => {
             ctx.stroke()
         }
 
-        // Рисование данных
         ctx.strokeStyle = 'rgba(31, 122, 202, 1)'
         ctx.fillStyle = 'rgba(34, 202, 236, 0.2)'
         ctx.beginPath()
@@ -61,7 +57,6 @@ const RadarChart = ({ data, labels }) => {
         ctx.stroke()
         ctx.fill()
 
-        // Подписи
         ctx.fillStyle = '#111'
         ctx.font = '14px Arial'
         labels.forEach((label, i) => {
