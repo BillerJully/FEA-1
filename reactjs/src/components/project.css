@@ -32,3 +32,8 @@
 .project-button:hover {
     cursor: pointer;
 }
+
+.project-button a {
+    text-decoration: none;
+    color: white;
+}

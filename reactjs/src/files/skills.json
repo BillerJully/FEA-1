@@ -1,0 +1,7 @@
+[
+    { "skill": "js", "skillQty": 10 },
+    { "skill": "ts", "skillQty": 30 },
+    { "skill": "GO", "skillQty": 65 },
+    { "skill": "Docker", "skillQty": 11 },
+    { "skill": "Git", "skillQty": 85 }
+]
