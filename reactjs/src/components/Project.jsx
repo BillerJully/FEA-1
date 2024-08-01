@@ -4,8 +4,6 @@ import './project.css'
 export default function Project(projectData) {
     const { name, description, technologies, source, site } =
         projectData.projectData
-    console.log('Project data:', projectData)
-    console.log('Project name:', technologies)
     return (
         <div className="project-container">
             <div className="project-main">

@@ -6,6 +6,8 @@ import skills from '../files/skills.json'
 
 import './portfolio.css'
 export default function Portfolio() {
+    const countProjects = projects.length
+
     return (
         <section className="portfolio">
             <h1>Portfolio</h1>
@@ -39,7 +41,7 @@ export default function Portfolio() {
                 <Skill skillData={skills} />
             </div>
             <div className="projects-container">
-                <h3>Projects</h3>
+                <h3>Projects: {countProjects}</h3>
                 <div className="projects">
                     {projects.map((project, index) => (
                         <Project key={index} projectData={project} />

@@ -1,28 +1,35 @@
 [
     {
         "name": "Frontend app",
-        "description": "texttexttext texttexttexttext texttexttexttext texttexttexttext text",
+        "description": "portfolio card web page",
         "technologies": ["js", "ts"],
         "source": "google.com",
         "site": "youtube.com"
     },
     {
         "name": "Frontend app",
-        "description": "texttexttext texttexttexttext texttexttexttext texttexttexttext text",
+        "description": "colorado car sell for cash",
         "technologies": ["js", "ts"],
         "source": "google.com",
         "site": "youtube.com"
     },
     {
         "name": "Backend app",
-        "description": "texttexttext texttexttexttext texttexttexttext texttexttexttext text",
+        "description": "telegram message for website",
         "technologies": ["js", "ts"],
         "source": "google.com",
         "site": "youtube.com"
     },
     {
         "name": "Fullstack app",
-        "description": "texttexttext texttexttexttext texttexttexttext texttexttexttext text",
+        "description": "coffe shop all in",
+        "technologies": ["js", "ts"],
+        "source": "google.com",
+        "site": "youtube.com"
+    },
+    {
+        "name": "Fullstack app",
+        "description": "coffe shop all in",
         "technologies": ["js", "ts"],
         "source": "google.com",
         "site": "youtube.com"

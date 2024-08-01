@@ -8,7 +8,30 @@
 .skills-container {
     height: 410px;
     width: 420px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px;
     background-color: ghostwhite;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.04),
+        0px 0px 6px 0px rgba(30, 19, 19, 0.04);
+}
+
+.skill-name {
+    height: 50px;
+    width: 60px;
+    min-width: fit-content;
+    min-height: fit-content;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: rgb(41, 41, 41);
+    color: whitesmoke;
+    border: 1px solid black;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.04),
         0px 0px 6px 0px rgba(30, 19, 19, 0.04);
 }

@@ -9,7 +9,9 @@ export default function Skill({ skillData }) {
         <div className="skill-block">
             <div className="skills-container">
                 {skill.map((skillName, index) => (
-                    <p key={index}>{skillName}</p>
+                    <p className="skill-name" key={index}>
+                        {skillName}
+                    </p>
                 ))}
             </div>
             <div className="skills-map">
