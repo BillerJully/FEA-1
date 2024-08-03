@@ -1,9 +1,9 @@
 [
-    { "skill": "js", "skillQty": 10 },
+    { "skill": "js", "skillQty": 75 },
     { "skill": "ts", "skillQty": 30 },
     { "skill": "GO", "skillQty": 65 },
     { "skill": "Docker", "skillQty": 11 },
-    { "skill": "Git", "skillQty": 85 },
+    { "skill": "Git", "skillQty": 45 },
     { "skill": "Py", "skillQty": 23 },
     { "skill": "Node", "skillQty": 45 },
     { "skill": "DB", "skillQty": 76 },
