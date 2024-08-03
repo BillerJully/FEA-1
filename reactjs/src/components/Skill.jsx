@@ -18,7 +18,6 @@ export default function Skill({ skillData }) {
             <div className="skills-map">
                 <RadarChart labels={skill} data={skillQty} />
             </div>
-            <div className="skills-container"></div>
         </div>
     )
 }
