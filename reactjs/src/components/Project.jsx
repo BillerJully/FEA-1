@@ -1,11 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ModalProject from './ModalProject'
 import './project.css'
 
 export default function Project(projectData) {
     const { name, description, technologies, source, site } =
         projectData.projectData
+
+    const [modalActive, setModalActive] = useState(false)
+
+    const openModal = () => {
+        setModalActive(true)
+    }
+
+    const closeModal = () => {
+        setModalActive(false)
+    }
+
     return (
-        <div className="project-container">
+        <div className="project-container" onClick={openModal}>
             <div className="project-main">
                 <p>{name}</p>
                 <p>{description}</p>
@@ -20,6 +32,11 @@ export default function Project(projectData) {
                 </button>
                 <button className="project-button">See case</button>
             </div>
+            <ModalProject
+                modalActive={modalActive}
+                closeModal={closeModal}
+                name={name}
+            />
         </div>
     )
 }
