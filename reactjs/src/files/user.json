@@ -1,0 +1,10 @@
+{
+    "profession": "Software engineer",
+    "userName": "Bulat Zinnurov",
+    "age": "24 y.o.",
+    "location": "Kazan",
+    "experience": "2 years",
+    "links": {
+        "github": "google.com"
+    }
+}

@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Frontend app",
+        "description": "portfolio card web page",
+        "technologies": ["js", "ts"],
+        "source": "google.com",
+        "site": "youtube.com"
+    },
+    {
+        "name": "Frontend app",
+        "description": "colorado car sell for cash",
+        "technologies": ["js", "ts"],
+        "source": "google.com",
+        "site": "youtube.com"
+    },
+    {
+        "name": "Backend app",
+        "description": "telegram message for website",
+        "technologies": ["js", "ts"],
+        "source": "google.com",
+        "site": "youtube.com"
+    },
+    {
+        "name": "Fullstack app",
+        "description": "coffe shop all in",
+        "technologies": ["js", "ts"],
+        "source": "google.com",
+        "site": "youtube.com"
+    },
+    {
+        "name": "Fullstack app",
+        "description": "coffe shop all in",
+        "technologies": ["js", "ts"],
+        "source": "google.com",
+        "site": "youtube.com"
+    }
+]
