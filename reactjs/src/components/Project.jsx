@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import ModalProject from './ModalProject'
 import './project.css'
+import projectImg from '../files/petproject.png'
 
-export default function Project(projectData) {
-    const { name, description, technologies, source, site } =
-        projectData.projectData
+export default function Project({ projectData }) {
+    const { name, description, technologies, source, site } = projectData
 
     const [modalActive, setModalActive] = useState(false)
 
@@ -13,25 +13,28 @@ export default function Project(projectData) {
     }
 
     const closeModal = () => {
+        console.log('Closing modal')
         setModalActive(false)
     }
 
     return (
-        <div className="project-container" onClick={openModal}>
-            <div className="project-main">
-                <p>{name}</p>
-                <p>{description}</p>
-                <p>{technologies ? technologies.join(',') : 'Will be soon'}</p>
+        <div className="project-container">
+            <div className="project-main" onClick={openModal}>
+                <div className="project-img-holder">
+                    <img className="project-img" src={projectImg} alt="" />
+                </div>
+                <div className="project-descr-holder">
+                    <p>{description}</p>
+                </div>
+                <div className="project-tags-holder">
+                    {technologies
+                        ? technologies.map((tech) => (
+                              <span key={tech}>{tech}</span>
+                          ))
+                        : 'Will be soon'}
+                </div>
             </div>
-            <div className="project-buttons">
-                <button className="project-button">
-                    <a href={source}>Source code</a>
-                </button>
-                <button className="project-button">
-                    <a href={site}>Demo site</a>
-                </button>
-                <button className="project-button">See case</button>
-            </div>
+
             <ModalProject
                 modalActive={modalActive}
                 closeModal={closeModal}

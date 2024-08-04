@@ -8,16 +8,34 @@
     align-items: center;
     top: 0;
     left: 0;
-    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
 }
+
 .modal-project-container.active {
-    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .modal-project-content {
-    padding: 20px;
+    padding: 10px 20px 0px 20px; /*вверх право низ лево*/
     border-radius: 14px;
     background-color: white;
     width: 900px;
     height: 700px;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.close-modal-project-botton {
+    cursor: pointer;
+}
+.close-modal-project-botton:hover {
+    color: rgb(124, 124, 124);
 }

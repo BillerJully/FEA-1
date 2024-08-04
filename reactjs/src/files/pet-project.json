@@ -1,0 +1,155 @@
+[
+    {
+        "name": "Restaurant ",
+        "type": "FEA-1",
+        "description": "text",
+        "img-src": "url////",
+        "technologies": [
+            "ts",
+            "js",
+            "react",
+            "nodejs",
+            "nextjs",
+            "vuejs",
+            "docker"
+        ],
+        "source": "githuv.com",
+        "site": "google.com"
+    },
+    {
+        "name": "Portfolio-web-site",
+        "type": "FSA-1",
+        "description": "texsfasfast",
+        "img-src": "url////",
+        "technologies": [
+            "ts",
+            "js",
+            "react",
+            "nodejs",
+            "nextjs",
+            "vuejs",
+            "docker"
+        ],
+        "source": "githuv.com",
+        "site": "google.com"
+    },
+    {
+        "name": "Paper code",
+        "type": "FEA-2",
+        "description": "text",
+        "img-src": "url////",
+        "technologies": [
+            "ts",
+            "js",
+            "react",
+            "nodejs",
+            "nextjs",
+            "vuejs",
+            "docker"
+        ],
+        "source": "githuv.com",
+        "site": "google.com"
+    },
+    {
+        "name": "Coffee shop",
+        "type": "FEA-3",
+        "description": "text",
+        "img-src": "url////",
+        "technologies": [
+            "ts",
+            "js",
+            "react",
+            "nodejs",
+            "nextjs",
+            "vuejs",
+            "docker"
+        ],
+        "source": "githuv.com",
+        "site": "google.com"
+    },
+    {
+        "name": "Online Cinema",
+        "type": "FEA-4",
+        "description": "text",
+        "img-src": "url////",
+        "technologies": [
+            "ts",
+            "js",
+            "react",
+            "nodejs",
+            "nextjs",
+            "vuejs",
+            "docker"
+        ],
+        "source": "githuv.com",
+        "site": "google.com"
+    },
+    {
+        "name": "CodeWork platform",
+        "type": "FSA-2",
+        "description": "text",
+        "img-src": "url////",
+        "technologies": [
+            "ts",
+            "js",
+            "react",
+            "nodejs",
+            "nextjs",
+            "vuejs",
+            "docker"
+        ],
+        "source": "githuv.com",
+        "site": "google.com"
+    },
+    {
+        "name": "Best choice (Edu)",
+        "type": "FEA-5",
+        "description": "text",
+        "img-src": "url////",
+        "technologies": [
+            "ts",
+            "js",
+            "react",
+            "nodejs",
+            "nextjs",
+            "vuejs",
+            "docker"
+        ],
+        "source": "githuv.com",
+        "site": "google.com"
+    },
+    {
+        "name": "Best choice (Edu)",
+        "type": "BEA-1",
+        "description": "text",
+        "img-src": "url////",
+        "technologies": [
+            "ts",
+            "js",
+            "react",
+            "nodejs",
+            "nextjs",
+            "vuejs",
+            "docker"
+        ],
+        "source": "githuv.com",
+        "site": "google.com"
+    },
+    {
+        "name": "VPN app",
+        "type": "DA-1",
+        "description": "text",
+        "img-src": "url////",
+        "technologies": [
+            "ts",
+            "js",
+            "react",
+            "nodejs",
+            "nextjs",
+            "vuejs",
+            "docker"
+        ],
+        "source": "githuv.com",
+        "site": "google.com"
+    }
+]

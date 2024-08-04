@@ -3,10 +3,12 @@ import Skill from './Skill'
 import Project from './Project'
 import projects from '../files/projects.json'
 import skills from '../files/skills.json'
+import petProjects from '../files/pet-project.json'
 
 import './portfolio.css'
 export default function Portfolio() {
     const countProjects = projects.length
+    const countPetProjects = petProjects.length
 
     return (
         <section className="portfolio">
@@ -14,12 +16,10 @@ export default function Portfolio() {
             <div className="about-me-description-container">
                 <h3>About me</h3>
                 <p className="description-text">
-                    Hi there! I am Web Developer! Hi there! I am Web Developer!
-                    Hi there! I am Web Developer! Hi there! I am Web Developer!
-                    Hi there! I am Web Developer! Hi there! I am Web Developer!
-                    Hi there! I am Web Developer! Hi there! I am Web Developer!
-                    Hi there! I am Web Developer! Hi there! I am Web Developer!
-                    с большим интересом к созданию крутых приложений.
+                    I am a novice web developer with a keen interest in creating
+                    interactive and modern web applications. I develop projects
+                    with responsive user interface design and strive for
+                    continuous development in my field.
                 </p>
             </div>
             <div className="education-container">
@@ -45,6 +45,14 @@ export default function Portfolio() {
                 <div className="projects">
                     {projects.map((project, index) => (
                         <Project key={index} projectData={project} />
+                    ))}
+                </div>
+            </div>
+            <div className="projects-container">
+                <h3>Pet Projects: {countPetProjects}</h3>
+                <div className="projects">
+                    {petProjects.map((petProject, index) => (
+                        <Project key={index} projectData={petProject} />
                     ))}
                 </div>
             </div>
