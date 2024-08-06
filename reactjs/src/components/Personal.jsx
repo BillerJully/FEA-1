@@ -29,7 +29,7 @@ const Personal = () => {
                 </div>
             </div>
             <div className="personal-social-links">
-                <h3>Social links</h3>
+                {/* <h3>Social links</h3> */}
                 <div className="personal-social-links-block">
                     <div className="personal-social-link">
                         <a href="" className="social-link-a">

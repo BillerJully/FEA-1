@@ -1,0 +1,109 @@
+Вот список изменений и улучшений, которые были внесены в ваш код, чтобы модальное окно корректно закрывалось:
+
+1. Обработчик клика и верстка в ModalProject.jsx
+Проверка на клик по фону: Убедились, что клик по фону модального окна (класс modal-project-container) вызывает функцию closeModal.
+import React from 'react';
+import './modalProject.css';
+
+export default function ModalProject({ modalActive, closeModal, name }) {
+    const handleClick = (e) => {
+        if (e.target.classList.contains('modal-project-container')) {
+            closeModal();
+        }
+    };
+
+    return (
+        <div
+            className={`modal-project-container ${modalActive ? 'active' : ''}`}
+            onClick={handleClick}
+        >
+            <div className="modal-project-content">
+                {name}
+                <p>
+                    <a onClick={closeModal} style={{ cursor: 'pointer' }}>
+                        close
+                    </a>
+                </p>
+            </div>
+        </div>
+    );
+}
+2. Проверка стилей в modalproject.css
+Обновление свойств CSS: Убедились, что свойства opacity и pointer-events корректно работают для управления видимостью модального окна.
+.modal-project-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-project-container.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-project-content {
+    padding: 20px;
+    border-radius: 14px;
+    background-color: white;
+    width: 900px;
+    height: 700px;
+}
+3. Компонент Project.jsx
+Корректное обновление состояния: Убедились, что состояние modalActive корректно обновляется и используется для управления видимостью модального окна.
+Правильная структура JSX: Убедились, что обработчик клика openModal привязан к нужным элементам.
+import React, { useState } from 'react';
+import ModalProject from './ModalProject';
+import './project.css';
+
+export default function Project({ projectData }) {
+    const { name, description, technologies, source, site } = projectData;
+
+    const [modalActive, setModalActive] = useState(false);
+
+    const openModal = () => {
+        setModalActive(true);
+    };
+
+    const closeModal = () => {
+        console.log('Closing modal');
+        setModalActive(false);
+    };
+
+    return (
+        <div className="project-container">
+            <div className="project-main" onClick={openModal}>
+                <p>{name}</p>
+                <p>{description}</p>
+                <p>{technologies ? technologies.join(', ') : 'Will be soon'}</p>
+            </div>
+            <div className="project-buttons">
+                <button className="project-button">
+                    <a href={source}>Source code</a>
+                </button>
+                <button className="project-button">
+                    <a href={site}>Demo site</a>
+                </button>
+                <button className="project-button" onClick={openModal}>See case</button>
+            </div>
+            <ModalProject
+                modalActive={modalActive}
+                closeModal={closeModal}
+                name={name}
+            />
+        </div>
+    );
+}
+Основные изменения:
+Обработчик клика для фона модального окна: Убедились, что клик по фону модального окна вызывает функцию закрытия.
+Стили CSS: Проверили и убедились, что свойства opacity и pointer-events корректно управляют видимостью и взаимодействием с модальным окном.
+Состояние и JSX: Убедились, что состояние modalActive корректно обновляется и используется в компонентах.
+Эти изменения должны обеспечить корректное закрытие модального окна при клике по фону или по ссылке "close".

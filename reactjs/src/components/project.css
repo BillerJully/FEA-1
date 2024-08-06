@@ -1,46 +1,65 @@
 .project-container {
-    height: 260px;
-    width: 450px;
-    padding: 20px;
+    height: 450px;
+    width: 490px;
+    padding: 20px 0 20px 20px;
     border-radius: 7px;
-    /* border: 3px solid rgb(41, 41, 41); */
-    box-shadow: 0px 8px 16px 0px rgba(41, 41, 41, 0.04),
-        0px 0px 6px 0px rgba(41, 41, 41, 0.04);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(240, 240, 240);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.04),
+        0px 0px 6px 0px rgba(30, 19, 19, 0.04);
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: fit-content;
 }
 
 .project-main {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
 }
 
-.project-buttons {
+.project-img-holder {
+    width: calc(100% + 20px);
+    height: 70%;
+    margin: -20px 0 0 -20px;
+    box-sizing: border-box;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-descr-holder {
+    width: 100%;
+    overflow: hidden;
+    text-align: left;
+    color: rgb(64, 64, 64);
+    font-size: 18px;
+    font-weight: bold;
+    flex-grow: 0;
+}
+
+.project-tags-holder {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: flex-start;
+    gap: 22px;
+    width: 100%;
 }
 
-.project-button {
-    height: 40px;
-    width: 120px;
+.project-tags-holder span {
+    background-color: rgb(255, 255, 255);
+    color: rgb(64, 64, 64);
+    border: 2px solid rgb(64, 64, 64);
+    padding: 5px 10px;
     border-radius: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(74, 74, 74, 0.04),
-        0px 0px 6px 0px rgba(41, 41, 41, 0.04);
-    font-family: monospace;
-    border: 0.2px solid rgb(212, 212, 212);
-    font-size: 16px;
-    font-weight: 600;
-    margin: 5px;
-    color: whitesmoke;
-    background-color: rgb(41, 41, 41);
-}
-
-.project-button:hover {
-    cursor: pointer;
-    background-color: rgb(95, 95, 95);
-}
-
-.project-button a {
-    text-decoration: none;
-    color: white;
+    font-weight: 700;
+    white-space: nowrap;
 }
