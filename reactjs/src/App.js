@@ -1,6 +1,6 @@
 import Personal from './components/Personal'
 import Portfolio from './components/Portfolio'
-import './app.css'
+import './App.css'
 
 function App() {
     return (
