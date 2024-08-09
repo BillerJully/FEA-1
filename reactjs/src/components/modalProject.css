@@ -18,14 +18,6 @@
     pointer-events: auto;
 }
 
-.modal-project-content {
-    padding: 10px 20px 0px 20px; /*вверх право низ лево*/
-    border-radius: 14px;
-    background-color: white;
-    width: 900px;
-    height: 700px;
-}
-
 .modal-header {
     display: flex;
     align-items: center;
@@ -38,4 +30,54 @@
 }
 .close-modal-project-botton:hover {
     color: rgb(124, 124, 124);
+}
+
+.modal-project-content {
+    padding: 10px 20px 0px 20px; /*вверх право низ лево*/
+    border-radius: 14px;
+    background-color: white;
+    width: 900px;
+    height: 760px;
+}
+
+.modal-img {
+    width: 100%;
+}
+
+.modal-img img {
+    height: 360px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.modal-description-text {
+    display: flex;
+    justify-content: start;
+    gap: 16px;
+}
+
+.modal-description-text span {
+    border: 1px solid rgb(84, 84, 84);
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    align-content: center;
+    font-size: 14px;
+    text-align: center;
+}
+
+.modal-description-text span:hover {
+    background-color: rgb(207, 207, 207);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.modal-project-link-container {
+    margin-top: 4px;
+}
+
+.modal-project-link {
+    display: flex;
+    justify-content: space-around;
 }

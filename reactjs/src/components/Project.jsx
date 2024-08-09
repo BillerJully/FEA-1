@@ -4,7 +4,7 @@ import './project.css'
 import projectImg from '../files/petproject.png'
 
 export default function Project({ projectData }) {
-    const { name, description, technologies, source, site } = projectData
+    const { name, type, description, technologies, source, site } = projectData
 
     const [modalActive, setModalActive] = useState(false)
 
@@ -39,6 +39,11 @@ export default function Project({ projectData }) {
                 modalActive={modalActive}
                 closeModal={closeModal}
                 name={name}
+                type={type}
+                description={description}
+                technologies={technologies}
+                source={source}
+                site={site}
             />
         </div>
     )

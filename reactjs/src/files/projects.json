@@ -10,6 +10,7 @@
         "name": "Frontend app",
         "description": "colorado car sell for cash",
         "technologies": ["js", "ts"],
+        "projectImg": "../files/petproject.png",
         "source": "google.com",
         "site": "youtube.com"
     },

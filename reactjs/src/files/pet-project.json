@@ -3,7 +3,7 @@
         "name": "Restaurant ",
         "type": "FEA-1",
         "description": "text",
-        "img-src": "url////",
+        "img-src": "\\files\\projectImgs\\1.jpg",
         "technologies": [
             "ts",
             "js",
@@ -20,7 +20,7 @@
         "name": "Portfolio-web-site",
         "type": "FSA-1",
         "description": "texsfasfast",
-        "img-src": "url////",
+        "img-src": "\\files\\projectImgs\\2.jpg",
         "technologies": [
             "ts",
             "js",
@@ -37,7 +37,7 @@
         "name": "Paper code",
         "type": "FEA-2",
         "description": "text",
-        "img-src": "url////",
+        "img-src": "\\files\\projectImgs\\3.jpg",
         "technologies": [
             "ts",
             "js",
@@ -88,7 +88,7 @@
         "name": "CodeWork platform",
         "type": "FSA-2",
         "description": "text",
-        "img-src": "url////",
+        "img-src": "\\files\\projectImgs\\4.jpg",
         "technologies": [
             "ts",
             "js",
@@ -105,7 +105,7 @@
         "name": "Best choice (Edu)",
         "type": "FEA-5",
         "description": "text",
-        "img-src": "url////",
+        "img-src": "\\files\\projectImgs\\1.jpg",
         "technologies": [
             "ts",
             "js",
@@ -122,7 +122,7 @@
         "name": "Best choice (Edu)",
         "type": "BEA-1",
         "description": "text",
-        "img-src": "url////",
+        "img-src": "\\files\\projectImgs\\2.jpg",
         "technologies": [
             "ts",
             "js",
@@ -139,7 +139,7 @@
         "name": "VPN app",
         "type": "DA-1",
         "description": "text",
-        "img-src": "url////",
+        "img-src": "\\files\\projectImgs\\3.jpg",
         "technologies": [
             "ts",
             "js",
