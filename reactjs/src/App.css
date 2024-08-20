@@ -20,8 +20,17 @@ h3 {
 .page-holder {
     margin-top: 50px;
     display: flex;
-    align-items: baseline;
+    /* align-items: baseline; */
     justify-content: center;
-    gap: 50px;
-    height: 900px;
+    gap: 30px;
+    height: fit-content;
+}
+
+@media (max-width: 1580px) {
+    .page-holder {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
 }
